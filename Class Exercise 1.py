@@ -8,7 +8,7 @@ firstprimelist2 = []
 
 sin(A)  # 2
 
-1/tan(A)  # 4
+1/tan(A)  # 4 cos(A)/sin(A)
 
 log10(A)  # 6
 
