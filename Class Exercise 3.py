@@ -31,16 +31,16 @@ print("Your new grade is: ", grade)
 print()
 
 #  -------------------------------------------- Number 2 ---------------------------------------------------------------
-count = 0
 sum = 0.0
-number = 1
+num = 1
+cnt = 0
 
-while number != 0:
-    number = int(input("Input some integers to calculate their sum and average. Input 0 to exit."))
-    sum += number
-    count += 1
+while num != 0:
+    num = int(input("Input numbers to calculate sum and average, Input 0 to exit: "))
+    sum += num
+    cnt += 1
 
-print("Average and Sum of the above numbers are: ", sum / (count - 1), sum)
+print("Average and Sum of the above numbers are: ", sum / (cnt - 1), sum)
 
 #  -------------------------------------------- Number 3 ---------------------------------------------------------------
 rows = 12
