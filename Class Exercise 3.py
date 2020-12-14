@@ -52,3 +52,33 @@ for num in range(rows + 1):
         else:
             print(num, end=" ")  # print number
     print(" ")
+
+#  -------------------------------------------- Number 4 ---------------------------------------------------------------
+NumberFile = open("nums.csv", "r")
+row = NumberFile.readline().split(",")
+for i in range(len(row)):
+    row[i] = row[i]
+NumberFile.close()
+row.sort()
+row.reverse()
+NumberFile = open("newfile.csv", "w")
+for i in range(len(row)):
+    NumberFile.write(str(row[i]))
+    NumberFile.write(",")
+NumberFile.close()
+NumberFile = open("newfile.csv", "r")
+print(NumberFile.readlines())
+NumberFile.close()
+NumberFile = open("newfile.csv", "w")
+for i in range(len(row)):
+    NumberFile.write(str(row[i]))
+    NumberFile.write(",")
+    if row[i] == row[-1]:
+        NumberFile.write(""
+                         " ")
+NumberFile.close()
+
+
+NumberFile = open("newfile.csv", "r")
+print(NumberFile.readlines())
+NumberFile.close()
